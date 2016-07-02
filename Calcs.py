@@ -1,3 +1,3 @@
-class calcs:
-	def init(input):
+class calc(object):
+	def printInput(self, input):
 		print(input)

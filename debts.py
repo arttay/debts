@@ -1,9 +1,5 @@
 import Calcs
 
-GREAT_LAKES 	= 11637
-BND 			= 19371.60
-CREDIT_CARD 	= 8438.23
-
 def define_constants():
 	return {
 		"GREAT_LAKES": {
@@ -20,5 +16,5 @@ def define_constants():
 	}
 
 constants = define_constants()
-
-Calcs.init()
+calc = Calcs;
+calc.printInput("art")
