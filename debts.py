@@ -1,4 +1,4 @@
-import Calcs
+from Calcs import calc
 
 def define_constants():
 	return {
@@ -11,10 +11,14 @@ def define_constants():
 		},
 		"CREDIT_CARD":{
 			"total": 8438.23,
-			"interest":20.24
+			"interest":20.24,
+			"payoff": 3579.48
 		}
 	}
 
-constants = define_constants()
-calc = Calcs;
-calc.printInput("art")
+constants 	= define_constants()
+calc 		= calc()
+payment 	= input("Payment amount: ")
+
+
+calc.calcDebt(constants["CREDIT_CARD"]["total"], constants["CREDIT_CARD"]["interest"], payment, constants["CREDIT_CARD"]["payoff"])
